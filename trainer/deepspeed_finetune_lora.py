@@ -30,12 +30,12 @@ def train(
     data_path: str = "../instructions",
     output_dir: str = "./panda",
     # training hyperparams
-    batch_size: int = 128,
-    micro_batch_size: int = 2,
-    num_epochs: int = 3,
-    learning_rate: float = 3e-5,
+    batch_size: int = 1024,
+    micro_batch_size: int = 8,
+    num_epochs: int = 2,
+    learning_rate: float = 0.001,
     cutoff_len: int = 512,
-    val_set_size: int = 2000,
+    val_set_size: int = 100,
     # lora hyperparams
     lora_r: int = 8,
     lora_alpha: int = 16,

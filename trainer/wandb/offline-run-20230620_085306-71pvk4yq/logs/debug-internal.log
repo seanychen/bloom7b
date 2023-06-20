@@ -1,0 +1,44 @@
+2023-06-20 08:53:06,268 INFO    StreamThr :1942467 [internal.py:wandb_internal():86] W&B internal server running at pid: 1942467, started at: 2023-06-20 08:53:06.267987
+2023-06-20 08:53:06,269 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status
+2023-06-20 08:53:06,270 INFO    WriterThread:1942467 [datastore.py:open_for_write():85] open: /disk/models/Bloom-Lora/trainer/wandb/offline-run-20230620_085306-71pvk4yq/run-71pvk4yq.wandb
+2023-06-20 08:53:06,316 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: run_start
+2023-06-20 08:53:06,319 DEBUG   HandlerThread:1942467 [system_info.py:__init__():31] System info init
+2023-06-20 08:53:06,319 DEBUG   HandlerThread:1942467 [system_info.py:__init__():46] System info init done
+2023-06-20 08:53:06,319 INFO    HandlerThread:1942467 [system_monitor.py:start():181] Starting system monitor
+2023-06-20 08:53:06,320 INFO    SystemMonitor:1942467 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-20 08:53:06,320 INFO    HandlerThread:1942467 [system_monitor.py:probe():201] Collecting system info
+2023-06-20 08:53:06,320 INFO    SystemMonitor:1942467 [interfaces.py:start():190] Started cpu monitoring
+2023-06-20 08:53:06,321 INFO    SystemMonitor:1942467 [interfaces.py:start():190] Started disk monitoring
+2023-06-20 08:53:06,321 INFO    SystemMonitor:1942467 [interfaces.py:start():190] Started gpu monitoring
+2023-06-20 08:53:06,321 INFO    SystemMonitor:1942467 [interfaces.py:start():190] Started memory monitoring
+2023-06-20 08:53:06,322 INFO    SystemMonitor:1942467 [interfaces.py:start():190] Started network monitoring
+2023-06-20 08:53:06,335 DEBUG   HandlerThread:1942467 [system_info.py:probe():195] Probing system
+2023-06-20 08:53:06,335 DEBUG   HandlerThread:1942467 [system_info.py:_probe_git():180] Probing git
+2023-06-20 08:53:06,337 DEBUG   HandlerThread:1942467 [system_info.py:_probe_git():188] Probing git done
+2023-06-20 08:53:06,337 DEBUG   HandlerThread:1942467 [system_info.py:probe():240] Probing system done
+2023-06-20 08:53:06,337 DEBUG   HandlerThread:1942467 [system_monitor.py:probe():210] {'os': 'Linux-5.19.0-43-generic-x86_64-with-glibc2.35', 'python': '3.10.11', 'heartbeatAt': '2023-06-20T00:53:06.335145', 'startedAt': '2023-06-20T00:53:06.265231', 'docker': None, 'cuda': None, 'args': ('--local_rank=0', '--deepspeed', '--deepspeed_config', 'deepspeed.json'), 'state': 'running', 'program': '/disk/models/Bloom-Lora/trainer/deepspeed_finetune_lora.py', 'codePath': 'trainer/deepspeed_finetune_lora.py', 'git': {'remote': 'https://github.com/Macielyoung/Bloom-Lora.git', 'commit': '3f715ad07e4d356913ca0270ba825dbbfe6ae748'}, 'email': None, 'root': '/disk/models/Bloom-Lora', 'host': 'king-System-Product-Name', 'username': 'root', 'executable': '/disk/miniconda3/envs/seanc/bin/python', 'cpu_count': 24, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3585.33984375, 'min': 800.0, 'max': 4937.5}, 'cpu_freq_per_core': [{'current': 5500.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 5501.53, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 5500.666, 'min': 800.0, 'max': 5500.0}, {'current': 5500.0, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 5500.0, 'min': 800.0, 'max': 5500.0}, {'current': 5500.013, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5800.0}, {'current': 5499.872, 'min': 800.0, 'max': 5800.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 5500.0, 'min': 800.0, 'max': 5500.0}, {'current': 5500.307, 'min': 800.0, 'max': 5500.0}, {'current': 3000.0, 'min': 800.0, 'max': 5500.0}, {'current': 4310.995, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}, {'current': 3000.0, 'min': 800.0, 'max': 4300.0}], 'disk': {'total': 108.98257827758789, 'used': 75.6991195678711}, 'gpu': 'NVIDIA GeForce RTX 4090', 'gpu_count': 2, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}, {'name': 'NVIDIA GeForce RTX 4090', 'memory_total': 25757220864}], 'memory': {'total': 125.61557388305664}}
+2023-06-20 08:53:06,337 INFO    HandlerThread:1942467 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-20 08:53:06,337 INFO    HandlerThread:1942467 [system_monitor.py:probe():214] Publishing system info
+2023-06-20 08:53:06,337 DEBUG   HandlerThread:1942467 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-20 08:53:06,337 DEBUG   HandlerThread:1942467 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-20 08:53:06,337 DEBUG   HandlerThread:1942467 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-06-20 08:53:07,518 DEBUG   HandlerThread:1942467 [system_info.py:_save_conda():86] Saving conda packages done
+2023-06-20 08:53:07,519 INFO    HandlerThread:1942467 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-20 08:53:11,270 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:11,270 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:16,271 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:16,271 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:21,276 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:21,276 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:26,277 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:26,277 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:31,278 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:31,279 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:36,280 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:36,280 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:41,281 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:41,281 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:46,282 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:46,283 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report
+2023-06-20 08:53:51,288 DEBUG   HandlerThread:1942467 [handler.py:handle_request():144] handle_request: status_report
+2023-06-20 08:53:51,288 DEBUG   SenderThread:1942467 [sender.py:send_request():396] send_request: status_report

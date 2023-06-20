@@ -71,24 +71,23 @@ def group_text(examples):
             res['output'].append(target)
     return res
 
-
+'''
 # belle chinese dataset
 belle_id1 = "BelleGroup/generated_train_1M_CN"
 belle_dataset1 = load_hf_dataset(belle_id1)['train']
 print("belle1 data info: ", belle_dataset1)
 
-# belle chinese dataset
-belle_id2 = "BelleGroup/generated_train_0.5M_CN"
-belle_dataset2 = load_hf_dataset(belle_id2)['train']
-print("belle2 data info: ", belle_dataset2)
+# belle chinese da
+", belle_dataset2)
+'''
 
 # guanaco dataset
-guanaco_path = "../datasets/chinese_guanaco.json"
+guanaco_path = "../datasets/dss_Chinese.json"
 guanaco_dataset = load_json_dataset(guanaco_path)
 guanaco_dataset = Dataset.from_list(guanaco_dataset)
 print("guanaco data info: ", guanaco_dataset)
-
-# alpaca chinese dataset 
+'''
+# alpaca chinese dataset '
 alpaca_path1 = "../datasets/trans_chinese_alpaca_data.json"
 alpaca_dataset1 = load_json_dataset(alpaca_path1)
 # print(len(alpaca_dataset1))
@@ -101,11 +100,12 @@ alpaca_dataset2 = load_json_dataset(alpaca_path2)
 alpaca_dataset = alpaca_dataset1 + alpaca_dataset2
 alpaca_dataset = Dataset.from_list(alpaca_dataset)
 print("alpaca data info: ", alpaca_dataset)
-
-instruction_dataset = concatenate_datasets([belle_dataset1, belle_dataset2, guanaco_dataset, alpaca_dataset])
+'''
+#instruction_dataset = concatenate_datasets([guanaco_dataset, alpaca_dataset])
+instruction_dataset = guanaco_dataset
 instruction_dataset = instruction_dataset.map(group_text,
                                               batched=True,
-                                              batch_size=50,
+                                              batch_size=200,
                                               num_proc=10,
                                               remove_columns=instruction_dataset.column_names)
 
