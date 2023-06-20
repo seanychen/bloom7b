@@ -86,8 +86,8 @@ guanaco_path = "../datasets/dss_Chinese.json"
 guanaco_dataset = load_json_dataset(guanaco_path)
 guanaco_dataset = Dataset.from_list(guanaco_dataset)
 print("guanaco data info: ", guanaco_dataset)
-'''
-# alpaca chinese dataset '
+
+# alpaca chinese dataset 
 alpaca_path1 = "../datasets/trans_chinese_alpaca_data.json"
 alpaca_dataset1 = load_json_dataset(alpaca_path1)
 # print(len(alpaca_dataset1))
@@ -100,7 +100,7 @@ alpaca_dataset2 = load_json_dataset(alpaca_path2)
 alpaca_dataset = alpaca_dataset1 + alpaca_dataset2
 alpaca_dataset = Dataset.from_list(alpaca_dataset)
 print("alpaca data info: ", alpaca_dataset)
-'''
+
 #instruction_dataset = concatenate_datasets([guanaco_dataset, alpaca_dataset])
 instruction_dataset = guanaco_dataset
 instruction_dataset = instruction_dataset.map(group_text,
